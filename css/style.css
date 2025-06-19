@@ -20,6 +20,13 @@ body {
     --nav-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Base styles */
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --accent-color: #007bff;
+}
+
 /* Header e Navegação */
 header {
     background: rgba(255, 255, 255, 0.98);
@@ -930,6 +937,46 @@ header {
 
     .about-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .project-card {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .nav-item {
+        padding: 1rem;
     }
 }
 
