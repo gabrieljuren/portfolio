@@ -880,6 +880,10 @@ header {
         display: none;
     }
     
+    .about {
+        padding: 2rem 1rem;
+    }
+
     .about-content {
         flex-direction: column;
         text-align: center;
