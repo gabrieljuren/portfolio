@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">Gabriel <span>Juren</span></div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#projetos" class="nav-item"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#sobre" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#contato" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <canvas id="rainCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Welcome to my Portfolio">Welcome to my Portfolio</h1>
+            <p class="typing-text">Senior Mobile Developer</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image" data-images='[
+                    "assets/images/projects/audit-app1.png",
+                    "assets/images/projects/audit-app2.png",
+                    "assets/images/projects/audit-app3.png",
+                    "assets/images/projects/audit-app4.png"
+                ]'>
+                    <img src="assets/images/projects/audit-app1.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>OSHA Workplace Audit App</h3>
+                    <div class="project-tags">
+                        <span>.NET MAUI</span>
+                        <span>SQLite</span>
+                        <span>Offline Sync</span>
+                    </div>
+                    <p>Developed a mobile application to assist auditors in identifying workplace issues. The app allows auditors to report problems by capturing photos and adding comments, which are later reviewed by the audited party and must be addressed.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image" data-images='[
+                    "assets/images/projects/empower-app1.png",
+                    "assets/images/projects/empower-app2.png",
+                    "assets/images/projects/empower-app3.png"
+                ]'>
+                    <img src="assets/images/projects/empower-app1.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Empower</h3>
+                    <div class="project-tags">
+                        <span>.NET MAUI</span>
+                        <span>SQLite</span>
+                        <span>Offline Sync</span>
+                        <span>Firebase</span>
+                        <span>New Relic</span>
+                        <span>Azure DevOps</span>
+                    </div>
+                    <p>A large-scale project with real-time integration between a mobile app and SAP, with full offline functionality. One of the biggest challenges was making the app low-code, allowing users to create and reuse their own rules dynamically.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image" data-images='[
+                    "assets/images/projects/medcalc-app1.png",
+                    "assets/images/projects/medcalc-app2.png",
+                    "assets/images/projects/medcalc-app3.png"
+                ]'>
+                    <img src="assets/images/projects/medcalc-app1.png" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>MedCalc</h3>
+                    <div class="project-tags">
+                        <span>Xamarin.Forms</span>
+                        <span>SQLite</span>
+                    </div>
+                    <p>A mobile application developed to support anesthesiologists during surgical procedures by delivering accurate, real-time medical calculations. The solution enhances decision-making efficiency, improves workflow safety, and ensures high performance under critical conditions.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="about-grid">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="My photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>With over 5 years of experience, I specialize in Xamarin/.NET MAUI Mobile Development. I am responsible for designing and developing advanced mobile applications with .NET MAUI and C#.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="contact-wrapper">
+            <h2>Contact</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gabrieljuren/" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:gabrieljuren18@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageViewer" class="image-viewer">
+        <div class="viewer-content">
+            <img src="" alt="Enlarged image" id="viewerImage">
+            <button class="viewer-close">&times;</button>
+            <button class="viewer-nav prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="viewer-nav next"><i class="fas fa-chevron-right"></i></button>
+            <div class="zoom-controls">
+                <button class="zoom-btn zoom-in"><i class="fas fa-search-plus"></i></button>
+                <button class="zoom-btn zoom-out"><i class="fas fa-search-minus"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
